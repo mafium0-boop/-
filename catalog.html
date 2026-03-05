@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теплые истории - каталог</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Теплые истории</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html" class="active">Товары</a></li>
+                        <li><a href="about.html">О мастере</a></li>
+                        <li><a href="cart.html" class="cart-link">
+                            Корзина (<span id="cart-count-header">0</span>)
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="catalog-page">
+        <div class="container">
+            <h1 class="page-title">Наши изделия</h1>
+            <p class="page-subtitle">Все товары созданы вручную с любовью</p>
+            
+            <div class="product-grid" id="catalog-products">
+                <!-- Товар 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i127.fastpic.org/big/2026/0303/62/67706024ab7b665557c5acce5d8b4462.jpg" alt="Шапка Зимняя сказка">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Шапка «Зимняя сказка»</h3>
+                        <p class="product-description">Мягкая шапка из мериноса с помпоном. Очень теплая и уютная.</p>
+                        <div class="product-footer">
+                            <span class="product-price">2 500 ₽</span>
+                            <button class="btn-small btn-add-to-cart" onclick="addToCart(1)">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i127.fastpic.org/big/2026/0303/31/39e5963fa71a7faa2431cfc19c606a31.webp" alt="Снуд Облако">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Снуд «Облако»</h3>
+                        <p class="product-description">Объемный снуд из альпаки. Нежный, легкий, очень теплый. Длина 150 см.</p>
+                        <div class="product-footer">
+                            <span class="product-price">3 200 ₽</span>
+                            <button class="btn-small btn-add-to-cart" onclick="addToCart(2)">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i127.fastpic.org/big/2026/0303/4f/662e77c662ea4af1163e21c034691b4f.webp" alt="Варежки Уют">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Варежки «Уют»</h3>
+                        <p class="product-description">Теплые варежки с норвежским узором. Внутри мягкий подклад.</p>
+                        <div class="product-footer">
+                            <span class="product-price">1 900 ₽</span>
+                            <button class="btn-small btn-add-to-cart" onclick="addToCart(3)">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i127.fastpic.org/big/2026/0303/9a/a6790a35fc2a9a0d9716bfc6401d609a.jpg" alt="Плед Домашний">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Плед «Домашний»</h3>
+                        <p class="product-description">Большой плед 150x200 см из мягкого мериноса. Подходит для аллергиков.</p>
+                        <div class="product-footer">
+                            <span class="product-price">5 900 ₽</span>
+                            <button class="btn-small btn-add-to-cart" onclick="addToCart(4)">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i127.fastpic.org/big/2026/0303/aa/a0e89c5ccf07d31c512a9556b00df8aa.webp" alt="Носки Теплые">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Носки «Теплые»</h3>
+                        <p class="product-description">Домашние носки из деревенской шерсти. Размер 36-41 универсальный.</p>
+                        <div class="product-footer">
+                            <span class="product-price">1 200 ₽</span>
+                            <button class="btn-small btn-add-to-cart" onclick="addToCart(5)">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i127.fastpic.org/big/2026/0303/d1/2f7949c61e370eb8c200d15ebf090fd1.webp" alt="Кардиган Нежность">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Кардиган «Нежность»</h3>
+                        <p class="product-description">Уютный кардиган крупной вязки. Длина до середины бедра.</p>
+                        <div class="product-footer">
+                            <span class="product-price">4 500 ₽</span>
+                            <button class="btn-small btn-add-to-cart" onclick="addToCart(6)">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Теплые истории</h3>
+                    <p>Вязаные изделия ручной работы с любовью и теплом</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Товары</a></li>
+                        <li><a href="about.html">О мастере</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Email: Mafium5@yandex.ru</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Теплые истории.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

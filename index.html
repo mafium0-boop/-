@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Теплые истории - главная</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Теплые истории</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Товары</a></li>
+                        <li><a href="about.html">О мастере</a></li>
+                        <li><a href="cart.html" class="cart-link">
+                            Корзина (<span id="cart-count-header">0</span>)
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Тепло, созданное с любовью</h1>
+                <p>Авторские вязаные изделия из натуральной пряжи. Каждая вещь существует в единственном экземпляре.</p>
+                <a href="catalog.html" class="btn">Смотреть каталог</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://i127.fastpic.org/big/2026/0303/1c/a3253f9aa835905b9c1f77d153ccef1c.jpeg" alt="Вязаный плед">
+            </div>
+        </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Что я вяжу</h2>
+            <p class="section-subtitle">Каждое изделие создается с душой</p>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-hat-wizard"></i>
+                    <h3>Шапки</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-scarf"></i>
+                    <h3>Шарфы</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>Варежки</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-couch"></i>
+                    <h3>Пледы</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Превью товаров -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Популярные модели</h2>
+            <p class="section-subtitle">Хиты продаж этой осени</p>
+            
+            <div class="product-grid" id="featured-products">
+                <!-- Товары загрузятся через JavaScript -->
+            </div>
+            
+            <div class="center-btn">
+                <a href="catalog.html" class="btn">Смотреть все товары</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Теплые истории</h3>
+                    <p>Вязаные изделия ручной работы с любовью и теплом</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Товары</a></li>
+                        <li><a href="about.html">О мастере</a></li>
+                        <li><a href="cart.html">Корзина</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Email: Mafium5@yandex.ru</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Теплые истории.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
